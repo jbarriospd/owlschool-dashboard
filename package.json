@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "scripts": {  
     "dev": "webpack-dev-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +20,7 @@
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
     "@babel/runtime": "^7.11.2",
+    "@storybook/react": "^6.0.26",
     "babel-loader": "^8.1.0",
     "html-webpack-plugin": "^4.4.1",
     "webpack": "^4.44.1",
