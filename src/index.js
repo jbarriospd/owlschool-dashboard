@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Home from './components/pages/home/home'
+import App from './App'
 
-ReactDOM.render(<Home />, document.getElementById('app'))
+ReactDOM.render(<App />, document.getElementById('app'))
+
